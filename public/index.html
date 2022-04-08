@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="main.css">
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
@@ -29,9 +31,30 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
-    <script src="index.js"></script>
 </head>
 <body>
-    <h1>My music web app with firestore and parcelJS</h1>
+    <nav>
+        <div class="nav-logo">
+            <h1>Glazba</h1>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Select Artist</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        
+    </nav>
+    <div class="container">
+        <h1>Stream Music from anywhere</h1>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
