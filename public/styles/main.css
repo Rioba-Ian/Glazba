@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     height: 125vh;
-    background-image: url('./assets/pexels-andrea-piacquadio-761963.jpg');
+    background-image: url('../assets/pexels-andrea-piacquadio-761963.jpg');
     background-size: cover;
     font-family: sans-serif;
+    
 }
 
 *{
@@ -68,15 +69,21 @@ nav{
     margin: 5px;
 }
 
+
+/* tablet view for landing page */
 @media screen and (max-width:1024px) {
     .nav-links{
         width: 60%;
     }
 }
 
+
+/* mobile view for landing page */
+
 @media screen and (max-width:768px) {
-    body{
+    html, body{
         overflow-x: hidden;
+        /* height: auto; */
     }
     .nav-links{
         position: absolute;
@@ -103,3 +110,15 @@ nav{
 .nav-active{
     transform: translateX(0%);
 }
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
